@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --color-accent-orange: #ffad62;
+  ---color-bg-react-flow: #151a20;
+  --color-bg-node: #181e25;
+  --color-edge: #7c7c7c;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,4 +18,12 @@ body,
 #root {
   height: 100%;
   margin: 0;
+}
+
+.react-flow__edge-path {
+  stroke: var(--color-edge);
+}
+
+.react-flow__background {
+  background-color: #151a20;
 }

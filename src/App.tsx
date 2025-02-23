@@ -8,6 +8,7 @@ import {
   useNodesState,
   useEdgesState,
   type OnConnect,
+  BackgroundVariant,
 } from "@xyflow/react"
 
 import "@xyflow/react/dist/style.css"
@@ -35,7 +36,7 @@ export default function App() {
       fitView
       colorMode='dark'
     >
-      <Background />
+      <Background color='#212121' variant={BackgroundVariant.Lines} />
       <MiniMap />
       <Controls />
     </ReactFlow>
